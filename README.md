@@ -50,3 +50,7 @@ GTM_TAGS_ANALYTICS - return all analytics tags
 
 GTM_NOTES_ADD(itemPath, notes) - create/update notes for item
 
+
+Note
+Don't use nested GTM functions:
+-GTM_A(GTM_B)-
