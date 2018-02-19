@@ -73,6 +73,7 @@ ITEMS
 Most functions return pair [path, name]
 ```=GTM_TAGS_LIST("workspacePath");```
 retrurns
+
 | path | name |  
 | --- | --- |   
 | /path/workspace/tag/32 | Tag name |
