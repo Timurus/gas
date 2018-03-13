@@ -2,16 +2,14 @@
 GTM Manager lets you work with Google Tag Manager in Google Sheets.
 
 ## Quick start
-To get table with all accounts, containers and workspaces
-1. Write formula ```=GTM_WORKSPACE_LIST_ALL("accountPath")```
-2. Click in spreadsheet navigation:
-Add-ons > GTM Manager > RunAllFormulas
+Create new spreadsheet, install add-on.
 
-Items - Tags, Variables or Triggers.
-To get table with Items
-1. Write formula ```=GTM_[Items]_LIST("workspacePath")```
-2. Click in spreadsheet navigation:
-Add-ons > GTM Manager > RunAllFormulas
+* paste function GTM_ACCOUNTS_LIST()
+* Run 
+* Get result
+
+![Quick start GTM Manager](img/start.gif "Quick start GTM Manager")
+
 
 ## Pathes
 Most functions parameters are pathes (workspace, tag or folder).
@@ -41,7 +39,7 @@ WORKSPACE
 
 FOLDER
 * GTM_FOLDER_LIST(workspacePath)
-* GTM_FOLDER_COPY:(workspacePath,to_workspacePath)
+* GTM_FOLDER_COPY(workspacePath,to_workspacePath)
 
 TAGS
 * GTM_TAGS_LIST(workspacePath)
@@ -73,8 +71,8 @@ ITEMS
 * GTM_NOTES_ADD(itemPath, notes)
 * GTM_NOTES_LIST(workspacePath)
 * GTM_LINK(path)
-* GTM_ITEM_REMOVE(itemPath, notes)
-* GTM_ITEM_REVERT(itemPath, notes)
+* GTM_ITEM_REMOVE(itemPath)
+* GTM_ITEM_REVERT(itemPath)
 * GTM_FIND(needle, workspacePath)
 * GTM_RELATIONS(workspacePath)
     
