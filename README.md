@@ -82,7 +82,7 @@ retrurns
 
 *  GTM_NOTES_LIST(workspacePath) - returns item [name, path, type, notes]  
 * GTM_COPY(itemPath, to_workspacePath) - copy item to another workspace
-* GTM_FOLDER_COPY(folderPath, to_workspacePath) - copy foleder with items to another workspace. Breaks if item name exist at acceptor workspace.
+* GTM_FOLDER_COPY(folderPath, to_workspacePath) - copy folder with items to another workspace. Breaks if item name exist at acceptor workspace.
 * GTM_RENAME(itemPath, name) - rename item
 * GTM_WORKSPACE_LIST_ALL - return all accounts, containers and workspaces
 * GTM_TAGS_ANALYTICS - return all analytics tags
