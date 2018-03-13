@@ -14,7 +14,7 @@ To get table with Items
 Add-ons > GTM Manager > RunAllFormulas
 
 ## Pathes
-Most functions parameters are athes (workspace, tag or folder).
+Most functions parameters are pathes (workspace, tag or folder).
 You can find path in GTM page URL:  
 https://tagmanager.google.com/#/container/accounts/286472777/containers/22777/workspaces/82/variables/12
 
