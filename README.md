@@ -36,6 +36,8 @@ ACCOUNT
 WORKSPACE
 * GTM_WORKSPACE_LIST(containerPath)
 * GTM_WORKSPACE_LIST_ALL()
+* GTM_WORKSPACE_SET_SHEET()
+* GTM_WORKSPACE_GET_SHEET()
 
 FOLDER
 * GTM_FOLDER_LIST(workspacePath)
@@ -56,6 +58,10 @@ TAGS
 
 VARIABLES
 * GTM_VARIABLES_LIST(workspacePath)
+* GTM_VARIABLE_CUSTOM_JS_CREATE(name, javaScript, workspacePath)
+* GTM_VARIABLE_JS_CREATE(name, javaScript, workspacePath)
+* GTM_VARIABLES_CUSTOM_JS_UPDATE(javaScript, variablePath)
+* GTM_VARIABLES_LIST_PARAMS(workspacePath)
 
 TRIGGERS
 * GTM_TRIGGERS_LIST(workspacePath)
@@ -66,8 +72,13 @@ ITEMS
 * GTM_RENAME(itemPath, name)
 * GTM_NOTES_ADD(itemPath, notes)
 * GTM_NOTES_LIST(workspacePath)
+* GTM_LINK(path)
+* GTM_ITEM_REMOVE(itemPath, notes)
+* GTM_ITEM_REVERT(itemPath, notes)
+* GTM_FIND(needle, workspacePath)
+* GTM_RELATIONS(workspacePath)
     
-
+    
 
 ## Result
 Most functions return pair [path, name]
