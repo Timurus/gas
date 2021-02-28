@@ -48,6 +48,7 @@ TAGS
 * GTM_TAGS_LISTX (workspacePath, arr) - Get list of tags with optional params
 * GTM_TAGS_LIST_NOTES(workspacePath) - List of Tags with Notes in Workspace
 * GTM_TAGS_ANALYTICS(workspacePath) - List of GA Tags with parameters
+* GTM_TAGS_GA4(workspacePath) - List of GA4 Tags with parameters use <code>=QUERY({A:D}, "SELECT Col1, MAX(Col4) WHERE Col1<>'' GROUP BY Col1 PIVOT Col2, Col3 LABEL Col1 'Tag Name'")</code> to pivot it
 * GTM_TAG_BY_ID(id, workspacePath) - Return Tag with particular ID
 * GTM_TAG_UPDATE_CM(key, val, tagPath) - Update Tag's Custom Metric value
 * GTM_TAG_UPDATE_CD(key, val, tagPath) - Update Tag's Custom Dimension value
@@ -58,10 +59,12 @@ TAGS
 * GTM_TAG_CD(key, tagPath) - Returns Tag's Custom Dimension value
 * GTM_TAG_CM(key, tagPath) - Returns Tag's Custom Metric value
 * GTM_TAG_CG(key, tagPath) - Returns Tag's Content Group value
-* GTM_TAG_UPDATE_EA(val, tagPath) - Update Tag's Event Action value
-* GTM_TAG_UPDATE_EL(val, tagPath) - Update Tag's Event Label value
-* GTM_TAG_UPDATE_EC(val, tagPath) - Update Tag's Event Category value
-* GTM_TAG_UPDATE_EVENT(key, val, tagPath) - Update Tag's Event value
+* GTM_TAG_UPDATE_EA(val, tagPath) - Update Tag's GA Event Action value
+* GTM_TAG_UPDATE_EL(val, tagPath) - Update Tag's GA Event Label value
+* GTM_TAG_UPDATE_EC(val, tagPath) - Update Tag's GA Event Category value
+* GTM_TAG_UPDATE_EVENT(key, val, tagPath) - Update GA Tag's Event value
+* GTM_TAG_UPDATE_GA4_UP(key, val, tagPath) - Update GA4 Tag's User property
+* GTM_TAG_UPDATE_GA4_EP(key, val, tagPath)- Update GA4 Tag's Event parameter
 
 VARIABLES
 * GTM_VARIABLES_LIST(workspacePath) - List of Variables in Workspace
